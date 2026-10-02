@@ -1,0 +1,1345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Бурение скважин под воду под ключ. Опыт 10 лет, от 2300 ₽ за метр, гарантия 1 год.">
+<title>Бурение скважин под воду — под ключ</title>
+
+<style>
+:root{
+  --bg:#f5f7f4;
+  --surface:#fff;
+  --ink:#10231d;
+  --muted:#617069;
+  --line:#dce5df;
+  --accent:#116b5a;
+  --accent2:#dff2eb;
+  --dark:#0c2922;
+  --shadow:0 24px 70px rgba(16,35,29,.11)
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.5
+}
+
+button,input,textarea{
+  font:inherit
+}
+
+.wrap{
+  max-width:1180px;
+  margin:auto;
+  padding:0 28px
+}
+
+.root{
+  min-height:100vh;
+  background:var(--bg)
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(245,247,244,.88);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(220,229,223,.8)
+}
+
+.nav{
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:850;
+  letter-spacing:-.02em
+}
+
+.mark{
+  width:40px;
+  height:40px;
+  border-radius:13px;
+  background:var(--dark);
+  display:grid;
+  place-items:center;
+  color:white;
+  font-size:19px
+}
+
+.brand small{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:650;
+  letter-spacing:.08em;
+  text-transform:uppercase
+}
+
+.links{
+  display:flex;
+  gap:26px;
+  align-items:center
+}
+
+.links a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:650
+}
+
+.nav-cta{
+  background:var(--dark);
+  color:white;
+  padding:12px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:750
+}
+
+/* HERO */
+
+.hero{
+  padding:70px 0 80px
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:56px;
+  align-items:center
+}
+
+.eyebrow{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  background:var(--accent2);
+  color:var(--accent);
+  border-radius:999px;
+  padding:8px 13px;
+  font-size:12px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+
+.eyebrow i{
+  width:7px;
+  height:7px;
+  background:#31a47e;
+  border-radius:50%;
+  box-shadow:0 0 0 5px rgba(49,164,126,.12)
+}
+
+h1{
+  font-size:clamp(42px,6vw,72px);
+  line-height:.99;
+  letter-spacing:-.055em;
+  margin:20px 0 22px;
+  max-width:750px
+}
+
+h1 span{
+  color:var(--accent)
+}
+
+.lead{
+  font-size:18px;
+  color:var(--muted);
+  max-width:650px;
+  margin:0 0 30px
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap
+}
+
+.btn{
+  border:0;
+  border-radius:13px;
+  padding:15px 21px;
+  font-weight:800;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:white;
+  box-shadow:0 12px 28px rgba(17,107,90,.2)
+}
+
+.btn-secondary{
+  border:1px solid var(--line);
+  color:var(--ink);
+  background:var(--surface)
+}
+
+.trust{
+  display:flex;
+  gap:25px;
+  margin-top:35px;
+  flex-wrap:wrap
+}
+
+.trust div{
+  font-size:13px;
+  color:var(--muted)
+}
+
+.trust b{
+  display:block;
+  color:var(--ink);
+  font-size:18px;
+  letter-spacing:-.03em
+}
+
+/* HERO CARD */
+
+.hero-card{
+  min-height:510px;
+  border-radius:28px;
+  background:linear-gradient(145deg,#123f34,#0a211c);
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  padding:30px;
+  color:white
+}
+
+.hero-card:before,
+.hero-card:after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.12)
+}
+
+.hero-card:before{
+  width:440px;
+  height:440px;
+  right:-150px;
+  top:-110px
+}
+
+.hero-card:after{
+  width:280px;
+  height:280px;
+  left:-120px;
+  bottom:-140px
+}
+
+.well{
+  position:absolute;
+  left:11%;
+  right:11%;
+  bottom:0;
+  height:76%;
+  border-radius:190px 190px 0 0;
+  background:linear-gradient(90deg,#172f29,#315e52);
+  opacity:.8
+}
+
+.water{
+  position:absolute;
+  left:11%;
+  right:11%;
+  bottom:12%;
+  height:25%;
+  border-radius:50%;
+  background:linear-gradient(180deg,#55bba0,#15745f);
+  box-shadow:inset 0 12px 35px rgba(255,255,255,.12)
+}
+
+.drill{
+  position:absolute;
+  width:15px;
+  height:55%;
+  left:50%;
+  bottom:22%;
+  background:#dce7e3;
+  transform:translateX(-50%);
+  border-radius:10px
+}
+
+.card-label{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start
+}
+
+.badge{
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.16);
+  padding:8px 11px;
+  border-radius:10px;
+  font-size:11px;
+  font-weight:750
+}
+
+.mini{
+  position:absolute;
+  z-index:3;
+  left:28px;
+  bottom:28px;
+  right:28px;
+  background:rgba(8,27,22,.72);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.12);
+  padding:18px;
+  border-radius:17px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px
+}
+
+.mini strong{
+  font-size:22px
+}
+
+.mini span{
+  display:block;
+  color:#b9ccc5;
+  font-size:12px
+}
+
+/* SECTIONS */
+
+.section{
+  padding:92px 0
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:38px
+}
+
+.kicker{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--accent);
+  font-weight:850
+}
+
+.section h2{
+  font-size:clamp(32px,4vw,52px);
+  line-height:1.05;
+  letter-spacing:-.045em;
+  margin:9px 0 0
+}
+
+.section-head p{
+  max-width:430px;
+  color:var(--muted);
+  margin:0
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px
+}
+
+.feature{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:27px;
+  min-height:220px
+}
+
+.icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:var(--accent2);
+  color:var(--accent);
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  margin-bottom:30px
+}
+
+.feature h3{
+  margin:0 0 9px;
+  font-size:20px
+}
+
+.feature p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px
+}
+
+/* DARK BAND */
+
+.band{
+  background:var(--dark);
+  color:white
+}
+
+.band .section-head p{
+  color:#a9bbb5
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:22px;
+  overflow:hidden
+}
+
+.stat{
+  padding:27px;
+  background:rgba(255,255,255,.025)
+}
+
+.stat b{
+  display:block;
+  font-size:38px;
+  letter-spacing:-.05em
+}
+
+.stat span{
+  color:#a9bbb5;
+  font-size:13px
+}
+
+/* SERVICES */
+
+.services{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px
+}
+
+.service{
+  padding:27px;
+  border-radius:22px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:20px
+}
+
+.service h3{
+  margin:0 0 7px;
+  font-size:19px
+}
+
+.service p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px
+}
+
+.num{
+  font-size:12px;
+  font-weight:850;
+  color:var(--accent)
+}
+
+/* STEPS */
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px
+}
+
+.step{
+  padding:24px 0;
+  border-top:2px solid var(--line)
+}
+
+.step b{
+  color:var(--accent);
+  font-size:13px
+}
+
+.step h3{
+  font-size:18px;
+  margin:18px 0 8px
+}
+
+.step p{
+  font-size:14px;
+  color:var(--muted);
+  margin:0
+}
+
+/* FORM */
+
+.quote{
+  background:linear-gradient(135deg,#dff2eb,#f8fbf9);
+  border:1px solid #cce5dc;
+  border-radius:30px;
+  padding:42px;
+  display:grid;
+  grid-template-columns:1fr .85fr;
+  gap:45px;
+  align-items:center
+}
+
+.quote h2{
+  margin:0 0 15px
+}
+
+.quote p{
+  color:var(--muted);
+  margin:0
+}
+
+.form{
+  background:white;
+  border-radius:20px;
+  padding:22px;
+  border:1px solid var(--line)
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px
+}
+
+.form input,
+.form textarea{
+  width:100%;
+  border:1px solid var(--line);
+  background:#fbfcfb;
+  border-radius:11px;
+  padding:13px 14px;
+  outline:none;
+  margin-bottom:10px
+}
+
+.form textarea{
+  min-height:90px;
+  resize:vertical
+}
+
+.form input:focus,
+.form textarea:focus{
+  border-color:#7bb7a7
+}
+
+.form .btn{
+  width:100%
+}
+
+.note{
+  font-size:11px;
+  color:#7b8983;
+  text-align:center;
+  margin:10px 0 0
+}
+
+/* FOOTER */
+
+footer{
+  padding:32px 0 42px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  gap:20px
+}
+
+.footer a{
+  color:var(--ink);
+  text-decoration:none
+}
+
+/* TABLET */
+
+@media(max-width:850px){
+
+  .wrap{
+    padding:0 18px
+  }
+
+  .links{
+    display:none
+  }
+
+  .hero{
+    padding:48px 0 55px
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:35px
+  }
+
+  .hero-card{
+    min-height:390px
+  }
+
+  .features,
+  .steps{
+    grid-template-columns:1fr 1fr
+  }
+
+  .stats{
+    grid-template-columns:1fr 1fr
+  }
+
+  .services,
+  .quote{
+    grid-template-columns:1fr
+  }
+
+  .section{
+    padding:65px 0
+  }
+
+  .section-head{
+    display:block
+  }
+
+  .section-head p{
+    margin-top:15px
+  }
+
+  .quote{
+    padding:27px
+  }
+}
+
+/* PHONE */
+
+@media(max-width:520px){
+
+  h1{
+    font-size:43px
+  }
+
+  .lead{
+    font-size:16px
+  }
+
+  .hero-card{
+    min-height:330px;
+    border-radius:22px
+  }
+
+  .mini{
+    left:15px;
+    right:15px;
+    bottom:15px;
+    padding:14px
+  }
+
+  .mini strong{
+    font-size:18px
+  }
+
+  .features,
+  .steps{
+    grid-template-columns:1fr
+  }
+
+  .stats{
+    grid-template-columns:1fr 1fr
+  }
+
+  .stat b{
+    font-size:29px
+  }
+
+  .form-row{
+    grid-template-columns:1fr
+  }
+
+  .footer{
+    display:block
+  }
+
+  .footer div+div{
+    margin-top:12px
+  }
+
+  .nav{
+    height:68px
+  }
+
+  .brand{
+    font-size:14px
+  }
+
+  .nav-cta{
+    padding:10px 13px;
+    font-size:12px
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="root">
+
+<!-- HEADER -->
+
+<header>
+  <div class="wrap nav">
+
+    <a class="brand" href="#top">
+      <span class="mark">↓</span>
+
+      <span>
+        Бурение скважин
+        <small>вода на вашем участке</small>
+      </span>
+    </a>
+
+    <nav class="links">
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">Как работаем</a>
+      <a href="#request">Стоимость</a>
+    </nav>
+
+    <a class="nav-cta" href="#request">
+      Рассчитать стоимость
+    </a>
+
+  </div>
+</header>
+
+
+<main id="top">
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="wrap hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        <i></i>
+        Бурение под ключ
+      </div>
+
+      <h1>
+        Нужна вода на участке?
+        <span>Найдём её.</span>
+      </h1>
+
+      <p class="lead">
+        Пробурим скважину под воду быстро и надёжно.
+        10 лет опыта, качественные материалы и гарантия
+        на работы — от первого метра до готового источника.
+      </p>
+
+      <div class="actions">
+
+        <a class="btn btn-primary" href="#request">
+          Оставить заявку →
+        </a>
+
+        <a class="btn btn-secondary" href="#services">
+          Наши услуги
+        </a>
+
+      </div>
+
+      <div class="trust">
+
+        <div>
+          <b>10 лет</b>
+          опыта работы
+        </div>
+
+        <div>
+          <b>от 2 300 ₽</b>
+          за 1 метр
+        </div>
+
+        <div>
+          <b>1 год</b>
+          гарантии
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <div class="card-label">
+
+        <div>
+          <strong>Надёжный источник</strong>
+
+          <br>
+
+          <span style="color:#a9bbb5;font-size:12px">
+            для дома, дачи и участка
+          </span>
+        </div>
+
+        <span class="badge">
+          ПОД КЛЮЧ
+        </span>
+
+      </div>
+
+      <div class="well"></div>
+
+      <div class="water"></div>
+
+      <div class="drill"></div>
+
+      <div class="mini">
+
+        <div>
+          <span>Стоимость бурения</span>
+          <strong>от 2 300 ₽/м</strong>
+        </div>
+
+        <div style="text-align:right">
+          <span>Гарантия</span>
+          <strong>12 мес.</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="kicker">
+          Почему мы
+        </div>
+
+        <h2>
+          Вода без лишних<br>
+          хлопот и сюрпризов.
+        </h2>
+
+      </div>
+
+      <p>
+        Берём на себя весь процесс:
+        от оценки участка и бурения до обустройства
+        и рекомендаций по эксплуатации.
+      </p>
+
+    </div>
+
+
+    <div class="features">
+
+      <article class="feature">
+
+        <div class="icon">
+          01
+        </div>
+
+        <h3>
+          Знаем грунты
+        </h3>
+
+        <p>
+          10 лет практики помогают учитывать
+          особенности местности и точно выбирать
+          решение для вашего участка.
+        </p>
+
+      </article>
+
+
+      <article class="feature">
+
+        <div class="icon">
+          02
+        </div>
+
+        <h3>
+          Прозрачная смета
+        </h3>
+
+        <p>
+          Стоимость бурения — от 2 300 рублей
+          за метр. Согласуем объём работ
+          и условия до начала работ.
+        </p>
+
+      </article>
+
+
+      <article class="feature">
+
+        <div class="icon">
+          03
+        </div>
+
+        <h3>
+          Качественные материалы
+        </h3>
+
+        <p>
+          Используем обсадные трубы, фильтры
+          и комплектующие проверенных производителей.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="section band">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="kicker" style="color:#6fc5ab">
+          В цифрах
+        </div>
+
+        <h2>
+          Опыт, на который<br>
+          можно опереться.
+        </h2>
+
+      </div>
+
+      <p>
+        Работаем на результат и сопровождаем клиента
+        не только во время бурения.
+      </p>
+
+    </div>
+
+
+    <div class="stats">
+
+      <div class="stat">
+        <b>10</b>
+        <span>лет опыта</span>
+      </div>
+
+      <div class="stat">
+        <b>2 300 ₽</b>
+        <span>от стоимости метра</span>
+      </div>
+
+      <div class="stat">
+        <b>1 год</b>
+        <span>гарантии на работы</span>
+      </div>
+
+      <div class="stat">
+        <b>100%</b>
+        <span>прозрачная смета</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="kicker">
+          Услуги
+        </div>
+
+        <h2>
+          Всё необходимое<br>
+          для вашей скважины.
+        </h2>
+
+      </div>
+
+      <p>
+        Подберём состав работ под задачи участка
+        и ваш бюджет — без ненужных услуг.
+      </p>
+
+    </div>
+
+
+    <div class="services">
+
+      <article class="service">
+
+        <div>
+
+          <h3>
+            Бурение скважины под воду
+          </h3>
+
+          <p>
+            Бурение до водоносного горизонта
+            с установкой обсадных труб.
+          </p>
+
+        </div>
+
+        <span class="num">
+          01
+        </span>
+
+      </article>
+
+
+      <article class="service">
+
+        <div>
+
+          <h3>
+            Обустройство скважины
+          </h3>
+
+          <p>
+            Фильтр, комплектующие и подготовка
+            источника к дальнейшей эксплуатации.
+          </p>
+
+        </div>
+
+        <span class="num">
+          02
+        </span>
+
+      </article>
+
+
+      <article class="service">
+
+        <div>
+
+          <h3>
+            Подбор решения
+          </h3>
+
+          <p>
+            Оценим особенности участка и предложим
+            оптимальный вариант конструкции.
+          </p>
+
+        </div>
+
+        <span class="num">
+          03
+        </span>
+
+      </article>
+
+
+      <article class="service">
+
+        <div>
+
+          <h3>
+            Сервисное обслуживание
+          </h3>
+
+          <p>
+            Поможем сохранить стабильную работу
+            скважины и при необходимости проведём сервис.
+          </p>
+
+        </div>
+
+        <span class="num">
+          04
+        </span>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="section" id="process">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="kicker">
+          Как работаем
+        </div>
+
+        <h2>
+          Четыре шага<br>
+          до своей воды.
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="steps">
+
+      <div class="step">
+
+        <b>01 / Заявка</b>
+
+        <h3>
+          Обсуждаем задачу
+        </h3>
+
+        <p>
+          Уточняем особенности участка,
+          потребности и желаемый результат.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <b>02 / Расчёт</b>
+
+        <h3>
+          Готовим смету
+        </h3>
+
+        <p>
+          Предлагаем оптимальное решение
+          и заранее согласуем стоимость работ.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <b>03 / Бурение</b>
+
+        <h3>
+          Находим воду
+        </h3>
+
+        <p>
+          Выполняем бурение и монтаж необходимых
+          элементов скважины.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <b>04 / Результат</b>
+
+        <h3>
+          Передаём объект
+        </h3>
+
+        <p>
+          Проверяем результат, даём рекомендации
+          и предоставляем гарантию.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REQUEST -->
+
+<section class="section" id="request">
+
+  <div class="wrap">
+
+    <div class="quote">
+
+      <div>
+
+        <div class="kicker">
+          Рассчитать стоимость
+        </div>
+
+        <h2>
+          Расскажите о своём участке
+        </h2>
+
+        <p>
+          Оставьте заявку — рассчитаем ориентировочную
+          стоимость и предложим оптимальное решение
+          уже сегодня.
+        </p>
+
+      </div>
+
+
+      <form
+        class="form"
+        onsubmit="event.preventDefault(); this.innerHTML='<div style=\'text-align:center;padding:30px 10px\'><div class=\'icon\' style=\'margin:0 auto 18px\'>✓</div><h3>Заявка отправлена</h3><p style=\'color:var(--muted);font-size:14px\'>Спасибо! Мы свяжемся с вами для уточнения деталей.</p></div>'"
+      >
+
+        <div class="form-row">
+
+          <input
+            aria-label="Имя"
+            placeholder="Ваше имя"
+            required
+          >
+
+          <input
+            aria-label="Город"
+            placeholder="Город / район"
+            required
+          >
+
+        </div>
+
+
+        <textarea
+          aria-label="Сообщение"
+          placeholder="Коротко опишите участок или задачу"
+        ></textarea>
+
+
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Получить расчёт →
+        </button>
+
+
+        <p class="note">
+          Нажимая кнопку, вы соглашаетесь
+          на обработку данных.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="wrap footer">
+
+    <div>
+
+      <strong style="color:var(--ink)">
+        Бурение скважин под воду
+      </strong>
+
+      <br>
+
+      Вода начинается с правильного решения.
+
+    </div>
+
+    <div>
+      © 2026 · Работаем под ключ
+    </div>
+
+  </div>
+
+</footer>
+
+</div>
+
+</body>
+</html>
